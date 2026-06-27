@@ -1,0 +1,83 @@
+/* 1. Global Page Styles */
+body {
+  background-color: #121214; /* Sleek dark background */
+  color: #e1e1e6; /* Soft off-white text color */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  color: #00adb5; /* Electric teal heading accent color */
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #8f9ba8;
+  margin: 0;
+}
+
+/* 2. The Grid System (Arranges cards side-by-side) */
+.grid-container {
+  display: grid;
+  /* Automatically creates columns that wrap neatly on mobile screens! */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* 3. The Project Cards styling */
+.project-card {
+  background-color: #202024; /* Slightly lighter box contrast */
+  border: 1px solid #29292e;
+  border-radius: 12px; /* Smooth rounded card corners */
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes the button to the bottom */
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #ffffff;
+}
+
+.project-card p {
+  color: #a8a8b3;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* 4. Turning links into UI Buttons */
+.project-btn {
+  background-color: #00adb5;
+  color: #ffffff;
+  text-decoration: none; /* Removes the standard blue underline */
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.2s ease; /* Smooth hover effect */
+}
+
+/* Changes button color dynamically when you hover your mouse cursor over it */
+.project-btn:hover {
+  background-color: #008891;
+}
+
+footer {
+  margin-top: 60px;
+  color: #7c7c8a;
+  font-size: 12px;
+}
