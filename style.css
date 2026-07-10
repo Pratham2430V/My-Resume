@@ -59,7 +59,44 @@ img {
   margin-right: 30px;
 }
 #Footer {
+  background-color: #5996ff;
   color: black;
-  color: black;
-  padding: 1px;
+  border: 2px solid black;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 319px) and (max-width: 480px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1601px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
 }
